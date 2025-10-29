@@ -4,7 +4,7 @@
 """
 
 import logging
-from typing import Dict, Optional, List
+from typing import Dict, Optional, List, Tuple
 
 
 class RollingPositionManager:
@@ -34,7 +34,7 @@ class RollingPositionManager:
 
         self.logger = logging.getLogger(__name__)
 
-    def should_roll_position(self, position: Dict) -> tuple[bool, str, float]:
+    def should_roll_position(self, position: Dict) -> Tuple[bool, str, float]:
         """
         判断是否应该滚仓
 

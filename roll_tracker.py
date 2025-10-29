@@ -16,7 +16,7 @@ ROLL状态追踪器 (V2.0新增)
 import json
 import logging
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from pathlib import Path
 
 
@@ -184,7 +184,7 @@ class RollTracker:
 
         return new_count
 
-    def can_roll(self, symbol: str) -> tuple[bool, str, int]:
+    def can_roll(self, symbol: str) -> Tuple[bool, str, int]:
         """
         检查是否可以继续ROLL
 
