@@ -13,5 +13,6 @@ services:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONUNBUFFERED=1
     container_name: alpha_arena_bot
-    command: python alpha_arena_bot.py
-    # restart: unless-stopped
+    command: /bin/bash
+    tty: true
+    stdin_open: true
