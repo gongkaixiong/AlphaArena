@@ -30,6 +30,7 @@ def test_zenmux_connection():
     client = DeepSeekClient(api_key)
     print(f"✅ API 端点: {client.base_url}")
     print(f"✅ 模型名称: {client.model_name}")
+    print(f"✅ apikey: {client.api_key}")
     print()
 
     # 测试简单对话
@@ -48,7 +49,7 @@ def test_zenmux_connection():
 
         response = client.chat_completion(
             messages=test_messages,
-            model="deepseek/deepseek-chat",
+            model=client.model_name,
             temperature=0.7,
             max_tokens=100
         )

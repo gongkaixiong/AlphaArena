@@ -98,7 +98,7 @@ class AlphaArenaBot:
         self.initial_capital = float(os.getenv('INITIAL_CAPITAL', 10000))
         self.max_position_pct = float(os.getenv('MAX_POSITION_PCT', 10))
         self.default_leverage = int(os.getenv('DEFAULT_LEVERAGE', 3))
-        self.trading_interval = int(os.getenv('TRADING_INTERVAL_SECONDS', 300))
+        self.trading_interval = int(os.getenv('TRADING_INTERVAL_SECONDS', 1300))
 
         # 交易对
         symbols_str = os.getenv('TRADING_SYMBOLS', 'BTCUSDT,ETHUSDT')

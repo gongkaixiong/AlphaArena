@@ -10,9 +10,13 @@ services:
       - 5000:5000
     working_dir: /app
     environment:
+      - TZ=Asia/Shanghai
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONUNBUFFERED=1
     container_name: alpha_arena_bot
+    # command: pip install -r requirements.txt && python alpha_arena_bot.py
+
+    # 不执行任何命令
     command: /bin/bash
     tty: true
     stdin_open: true

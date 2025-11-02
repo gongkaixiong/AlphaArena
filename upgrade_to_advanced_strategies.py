@@ -18,7 +18,7 @@ print()
 
 print("📝 步骤1: 更新DeepSeek prompt...")
 
-deepseek_path = '/Volumes/Samsung/AlphaArena/deepseek_client.py'
+deepseek_path = './deepseek_client.py'
 
 with open(deepseek_path, 'r', encoding='utf-8') as f:
     deepseek_content = f.read()
@@ -226,7 +226,7 @@ print()
 
 print("📝 步骤2: 更新ai_trading_engine集成...")
 
-engine_path = '/Volumes/Samsung/AlphaArena/ai_trading_engine.py'
+engine_path = './ai_trading_engine.py'
 
 with open(engine_path, 'r', encoding='utf-8') as f:
     engine_content = f.read()
@@ -347,7 +347,7 @@ print()
 print("💡 提示: 查看 ADVANCED_STRATEGIES_GUIDE.md 了解完整策略用法")
 '''
 
-test_script_path = '/Volumes/Samsung/AlphaArena/test_advanced_strategies.py'
+test_script_path = './test_advanced_strategies.py'
 with open(test_script_path, 'w', encoding='utf-8') as f:
     f.write(test_script)
 
